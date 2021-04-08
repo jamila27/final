@@ -13,8 +13,9 @@ function EvtIcon(props)
      :"./uploads/Evenement/sport.png";
 
     return <div className={storyBorder ? "storyBorder" : ""}>
+      
         <img className={'evtIcon ${iconSize}'} 
-        src={EvenementImage}
+        src={'./uploads/Evenement/aa1617880900031'}
         />
     </div>
 }

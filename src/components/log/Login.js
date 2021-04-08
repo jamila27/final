@@ -13,20 +13,8 @@ import { applyMiddleware, createStore } from "redux";
 import thunk from "redux-thunk";
 import rootReducer from "../../reducers";
 
+import Log from "../Log";
 
-// const handleLogin = async googleData => {
-//     const res = await fetch("/api/v1/auth/google", {
-//         method: "POST",
-//         body: JSON.stringify({
-//             token: googleData.tokenId
-//         }),
-//         headers: {
-//             "Content-Type": "application/json"
-//         }
-//     })
-//     const data = await res.json()
-//     // store returned user somehow
-// }
 
 class Login extends Component {
     constructor(props) {
@@ -97,8 +85,9 @@ class Login extends Component {
 
 
     onFormSubmit = (e) => {
+  
         e.preventDefault();
-        console.log(e)
+    
         axios({
             method: "post",
             url: `${process.env.REACT_APP_API_URL}api/user/login`,
@@ -112,18 +101,12 @@ class Login extends Component {
             .then((res) => {
                 if (res.data.errors) {
                 } else {
-                    console.log("lomm")
                     localStorage.setItem('connected', this.state.connected);
                     localStorage.setItem('user', res.data.userA);
-                    // this.store = createStore(
-                    //     rootReducer,
-                    //     composeWithDevTools(applyMiddleware(thunk))
-                    //   );
                     window.location = "/home";
                 }
             })
             .catch((err) => {
-                console.log(err);
             });
     }
 
@@ -183,7 +166,7 @@ class Login extends Component {
                             required
                             fullWidth
                             id="email"
-                            label="Email"
+                            label="Mail"
                             name="email"
                             autoComplete="email"
                             onChange={this.changeMail}
@@ -207,10 +190,12 @@ class Login extends Component {
                             validators={['required']}
                         />
                         <Grid className="grid1" item xs>
-                            
-                            <Link style={{color:"#095b7c"}} className="insci" href="/" variant="body2">
-                            Mot de passe oublié ? Récupérer mon mot de passe
-                            </Link>
+                            <span>
+                                Mot de passe oublié ?
+                        </span>
+                            <Link className="insci" href="/" variant="body2">
+                                Récupérer mon mot de passe
+                        </Link>
                         </Grid>
                         <Button type="submit" size="large"
                             className='btn--send' fullWidth>Se connecter</Button>
@@ -264,40 +249,35 @@ class Login extends Component {
 
                             <Grid container>
                                 <Grid className="grid2" item xs>
-                                    
-                                    <Link style={{color:"#095b7c"}} className="insci" href="/registersync" variant="body2">
-                                    Nouveau sur SportShare ? Nous joindre
+                                    <span>
+                                        Nouveau sur SportShare ?
+                                    </span>
+                                    <Link className="insci" href="/registersync" variant="body2">
+                                        Nous joindre
                                     </Link>
 
                                     <style type="text/css">
                                         {`
 
                                         
-.insci  {
-    color : #095b7c;
-
+.inscri  {
+    align: center
   }
 
-  Link {
-    color : #095b7c;
-  }
+  
 
   .grid1 {
-      margin-left : 100px;
-      color : #095b7c;
-
+      margin-left : 35px;
   }
 
   .grid2 {
-    margin-left : 170px;
+    margin-left : 110px;
     margin-top : 5px;
-    color : #095b7c;
     
   }
 
   span {
     margin-right : 10px;
-
     
     
   }

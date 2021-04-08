@@ -1,5 +1,8 @@
 import axios from 'axios'
-export function initialiser(){return (dispatch)=>{
+export function initialiser(){
 
-    return axios.
-    get("http://localhost:5000/api/evenement/").then(data=>{const events=data.data.data;dispatch({type:"tousEv",payload:events})})}}
+    return (dispatch)=>{
+        var events
+    return axios
+    .get("http://localhost:5000/api/evenement/").then(data=>{   data.data.data ? events = data.data.data : events =[];
+    dispatch({type:"tousEv",payload:events})})}}

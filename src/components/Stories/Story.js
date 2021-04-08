@@ -1,9 +1,10 @@
 import "../../styles/components/_story.scss";
 import EvtIcon from "./StoryIcon";
-import ControlPointIcon from '@material-ui/icons/ControlPoint';
+
 function Story (props) {  
 let eventName = props.event.titre ;
-console.log( props.event.titre )
+// console.log( props.event.titre )
+
 if(eventName.length > 10)
 eventName = eventName.substring(0,10) + "...";
   

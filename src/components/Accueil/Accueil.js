@@ -1,7 +1,5 @@
  import React from 'react';
 
- import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
  import Navbar from '../Navbar/Navbar'
@@ -9,7 +7,6 @@ import { makeStyles } from "@material-ui/core/styles";
  import Slider from './Slider'
  import styles from "../../assets/jss/material-kit-react/views/landingPage.js";
 
-// import Slider from '../Slider';
  import Body from './Body';
  import Footer from './Footer';
 

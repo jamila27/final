@@ -54,14 +54,15 @@ const breakPoints = [
 
 function Stories(props) {
 
-const events= useSelector((state)=>{return state.events});
+const events = useSelector((state)=>{
+  return state.events});
+
 const [loadPage,setLoadPage]=useState(true);
 const dispatch=useDispatch()
+
 useEffect(async()=>{if(loadPage){
   await dispatch(initialiser())
   setLoadPage(false)}})
-/*props.events.then((events)=>{
-  setEvents(events)})*/
 
   return (<div>{(!loadPage)?(
     <div className="stories">

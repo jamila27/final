@@ -1,1 +1,1 @@
-export default function LoginAction(RR){console.log(RR) ;return {type:"log",payload:"oooo"};}
+export default function LoginAction(RR){return {type:"log",payload:"oooo"};}

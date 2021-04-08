@@ -40,7 +40,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
-import Logout from '../log/Logout';
+import Logout from '../Log/Logout';
 
 // import Association from '../../assets/images/association.png'
 // import Club from '../../assets/images/club.png'
