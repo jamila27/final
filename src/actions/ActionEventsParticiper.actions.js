@@ -1,0 +1,1 @@
+export   function Actionparticiper(event){return {type:"participerEvent",payload:event}}

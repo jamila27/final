@@ -1,0 +1,1 @@
+export function inviterJoueur(joueur){return {type:"inviter",payload:joueur};}

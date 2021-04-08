@@ -1,0 +1,141 @@
+.caption {
+    color: white;
+    /* font-size: 72px; */
+    font-weight: bolder;
+    text-align: center;
+    
+    
+    
+}
+
+p {
+    font-size: 20px;
+}
+ 
+
+/* .btn-inscri {
+    background-color: transparent;
+    color: #095b7c;
+    font-weight: bold;
+    border: 3px solid #095b7c;
+} 
+
+.btn-inscri:hover {
+    background-color: #095b7c;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #095b7c;
+} */
+
+.btn-cnx {
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f97304;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid #f97304;
+    text-align: center;
+} 
+
+.btn-cnx:hover {
+    background-color: #095b7c;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #095b7c;
+}  
+
+.carousel {
+    size: 50%;
+}
+
+
+.carousel-caption {
+    color: white;
+
+    text-align: justify;
+    margin-left: 200px; 
+    margin-right: 200px;
+    margin-top: 200px;
+    top: 0%;
+    transform: translateY(-50%);
+
+}
+
+.caption1 {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+/* .btn--cnx {
+    margin-right: -100px; 
+    background-color: white ;
+    
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #f97304;
+    border: 3px solid #f97304;
+  }
+
+  .btn--cnx:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #f97304;
+    border: 3px solid #f97304;
+  } */
+
+.caption2 {
+    
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+} 
+
+/* h3 {
+    color: #f97304;
+     font-size: 72px; 
+    font-weight: bold;
+     margin-top: 10px;
+    margin-left: 5px; 
+    font-family:  Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.carousel-caption  {
+    color: white;
+    
+    text-align: justify;
+   
+    margin-left: 100px; 
+    margin-right: 100px;
+     margin-bottom: 300px;
+    margin-left: 100px; 
+    margin-right: 100px; 
+    font-family:  Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+.caption1 {
+    
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.caption2 {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 25px;
+
+} 
+
+
+.btn {
+    margin: 6px;
+} */

@@ -1,0 +1,1 @@
+export default function LoginAction(RR){console.log(RR) ;return {type:"log",payload:"oooo"};}
